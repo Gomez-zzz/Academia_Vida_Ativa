@@ -124,11 +124,11 @@ test('Bordas dos campos, foco e indicadores têm contraste mínimo de 3:1',()=>{
  for(const surface of ['--bg','--surface','--surface-soft','--accent-soft'])assert.ok(contrast(t['--accent'],t[surface])>=3,'--accent / '+surface);
  for(const state of ['green','yellow','red'])assert.ok(contrast(t['--'+state],t['--'+state+'-soft'])>=3,state);
 });
-test('Tema grafite usa cores centralizadas, sem branco puro, em todos os módulos',()=>{
+test('Tema Carbono e Neon usa cores centralizadas em todos os módulos',()=>{
  const{css,block}=theme(),shell=fs.readFileSync(path.join(root,'style.css'),'utf8'),definitions=new Set([...block.matchAll(/(--[\w-]+)\s*:/g)].map(m=>m[1]));
- assert.match(block,/color-scheme:\s*dark/);assert.doesNotMatch(block,/#(?:FFFFFF|FFF)\b/gi);assert.doesNotMatch(css.replace(/:root\s*\{[^}]+\}/,''),/#[\da-f]{3,8}\b/gi);assert.doesNotMatch(shell,/#[\da-f]{3,8}\b/gi);
+ assert.match(block,/color-scheme:\s*dark/);assert.match(block,/--bg:\s*#151718/i);assert.match(block,/--surface:\s*#1F2226/i);assert.match(block,/--accent:\s*#CCFF00/i);assert.match(block,/--text:\s*#FFFFFF/i);assert.doesNotMatch(css.replace(/:root\s*\{[^}]+\}/,''),/#[\da-f]{3,8}\b/gi);assert.doesNotMatch(shell,/#[\da-f]{3,8}\b/gi);
  for(const stylesheet of [css,shell])for(const m of stylesheet.matchAll(/var\((--[\w-]+)\)/g))assert.ok(definitions.has(m[1]),'Variável não declarada: '+m[1]);
- const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/name="theme-color" content="#28323E"/);assert.match(html,/<svg[^>]+viewBox="0 0 24 24"/);assert.doesNotMatch(html,/⚡/);
+ const html=fs.readFileSync(path.join(root,'index.html'),'utf8');assert.match(html,/name="theme-color" content="#151718"/);assert.match(html,/<svg[^>]+viewBox="0 0 24 24"/);assert.doesNotMatch(html,/⚡/);
  for(const module of ['mod01-cadastros','modulo 2','mod03-catraca','mod04-auditoria','Modulo 5','mod06-relatorios']){const local=fs.readFileSync(path.join(root,'modulos',module,'style.css'),'utf8');assert.doesNotMatch(local,/color-scheme:\s*(?:dark|light)|#[\da-f]{3,8}\b/gi);}
 });
 

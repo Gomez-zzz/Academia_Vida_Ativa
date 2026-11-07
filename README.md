@@ -1,6 +1,6 @@
 # Academia Vida Ativa — apresentação do front-end
 
-Prévia interativa em HTML, CSS e JavaScript. A identidade visual usa grafite suave, painéis cinza azulados e azul suave nas ações. Os componentes são compartilhados entre seis módulos. As telas usam textos operacionais para a apresentação ao cliente; os dados e serviços continuam fictícios e locais.
+Prévia interativa em HTML, CSS e JavaScript. A identidade visual usa Carbono e Neon, com superfícies de asfalto, cartões chumbo e verde cyber nas ações. Os componentes são compartilhados entre seis módulos. As telas usam textos operacionais para a apresentação ao cliente; os dados e serviços continuam fictícios e locais.
 
 ## Abrir a apresentação
 
@@ -54,8 +54,8 @@ Os resultados são salvos em auditoria/TESTES-FRONTEND.json. Os testes não subs
 
 Esta fase prepara a aprovação do front-end. Não há autenticação, API, banco de dados de produção, envio de pagamentos ou comando para equipamento físico de catraca.
 
-## Identidade visual em grafite e azul
+## Identidade visual Carbono e Neon
 
 As cores e os estados dos componentes estão centralizados em assets/app.css; style.css aplica o mesmo tema à navegação e ao cabeçalho. Controles nativos usam color-scheme: dark. A marca mantém o raio em SVG local e as fontes do sistema.
 
-A paleta e as decisões estão em auditoria/TEMA-GRAFITE-2026-10-09.md. A revisão atual de navegador está no mesmo relatório, com capturas em auditoria/visual/tema-grafite/. A revisão anterior do tema claro permanece em auditoria/VALIDACAO-TEMA-CLARO-2026-10-09.md. O relatório distingue a inspeção nas três larguras da verificação de reflow equivalente a 200%; o zoom real não pôde ser acionado no navegador integrado.
+Os tokens e a validação do tema atual estão em auditoria/TEMA-CARBONO-NEON-2026-11-06.md, com capturas em auditoria/visual/implementacao-2026-11/. TEMA-GRAFITE-2026-10-09.md e os relatórios do tema claro permanecem como histórico de decisões anteriores.

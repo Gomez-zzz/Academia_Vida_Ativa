@@ -1,2 +1,5 @@
 /* Estilos compartilhados entre os módulos da apresentação. */
 @import url("../../assets/app.css");
+.module > .card:first-of-type { border-top-color: color-mix(in srgb, var(--accent), var(--border) 55%); }
+.module > .card:first-of-type .fieldset legend { letter-spacing: -.01em; }
+.module > .card:last-of-type .card-heading { margin-bottom: 8px; }

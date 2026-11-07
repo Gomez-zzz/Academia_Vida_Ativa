@@ -4,6 +4,8 @@
 .finance-stats { gap: 12px; margin-bottom: 20px; }
 .finance-stats .stat { display: block; padding: 14px 18px; text-align: left; color: var(--text); }
 .finance-stats .stat > * { display: block; }
+.finance-stats .stat { transition: background-color var(--motion-fast), border-color var(--motion-fast), transform var(--motion-fast); }
+.finance-stats .stat-filter:hover { transform: translateY(-1px); }
 .finance-stats .stat-value { font-size: 24px; margin: 4px 0; }
 .stat-filter:hover, .stat-filter[aria-pressed=true] { background: var(--accent-soft); border-color: var(--accent); }
 .search-row { display: flex; align-items: end; gap: 16px; }
@@ -18,6 +20,7 @@
 #filtro-erro:not(:empty) { margin-top: 8px; }
 #page-feedback:not(:empty) { margin: 0 0 20px; }
 .operation-panel { border-color: var(--accent); scroll-margin-top: 20px; }
+.operation-panel { box-shadow: 0 14px 34px rgb(8 14 21 / 22%); }
 .operation-panel .card-heading { align-items: start; margin-bottom: 8px; }
 .operation-panel .card-heading .btn { flex-shrink: 0; }
 .operation-panel .fieldset { margin-top: 24px; }
@@ -47,6 +50,7 @@
 .contract-management { display: flex; align-items: center; gap: 20px; justify-content: space-between; border-top: 1px solid var(--border); margin-top: 24px; padding-top: 20px; }
 .contract-management .btn { flex-shrink: 0; }
 .finance-records .card-heading { margin-bottom: 0; }
+.finance-records .table-wrap:focus-visible { outline-offset: 4px; }
 .finance-table { min-width: 0; table-layout: fixed; }
 .finance-table th, .finance-table td { white-space: normal; padding: 12px 10px; overflow-wrap: anywhere; }
 .finance-table th:first-child { width: 18%; }
@@ -84,7 +88,7 @@
  .finance-stats .stat { padding: 10px; }
  .finance-stats .stat-label { font-size: 12px; }
  .finance-stats .stat-value { font-size: 17px; }
- .finance-stats .stat-description { display: none; }
+ .finance-stats .stat-description { display: block; font-size: 10px; line-height: 1.25; margin-top: 4px; color: var(--muted); }
  .search-row { align-items: stretch; flex-direction: column; gap: 12px; }
  .plan-options { grid-template-columns: 1fr; }
  .plan-option label { display: grid; grid-template-columns: 1fr auto; }

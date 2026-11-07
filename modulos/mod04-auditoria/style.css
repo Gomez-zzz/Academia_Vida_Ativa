@@ -1,2 +1,4 @@
 /* Estilos compartilhados entre os módulos da apresentação. */
 @import url("../../assets/app.css");
+.module:has(#liberacaoForm) .info-box { line-height: 1.6; }
+.module:has(#liberacaoForm) .card > h2 { margin-bottom: 20px; }

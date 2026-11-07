@@ -1,2 +1,5 @@
 /* Estilos compartilhados entre os módulos da apresentação. */
 @import url("../../assets/app.css");
+.module:has(#formRelatorio) .filters { align-items: end; }
+.module:has(#formRelatorio) .stats .stat { min-width: 0; }
+.module:has(#formRelatorio) .stats .stat-value { overflow-wrap: anywhere; }

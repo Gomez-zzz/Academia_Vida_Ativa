@@ -1,2 +1,4 @@
 /* Estilos compartilhados entre os módulos da apresentação. */
 @import url("../../assets/app.css");
+.module:has(#formAvaliacao) .result { display: flex; align-items: center; font-weight: 600; }
+.module:has(#formAvaliacao) .card-heading > .field { min-width: min(240px, 100%); }
