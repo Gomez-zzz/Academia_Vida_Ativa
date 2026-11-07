@@ -46,7 +46,7 @@ As capturas anteriores do mesmo projeto estão em `auditoria/visual/tema-grafite
 
 - Não alterei regras de cadastro, cobrança, contrato, acesso, liberação, avaliações ou relatórios.
 - O sistema continua sendo uma prévia local com dados demonstrativos; não foi criado portal do aluno, autenticação, API ou página comercial.
-- A proposta de comparar a identidade Carbono e Neon não foi aplicada porque a última decisão documentada favorece grafite e azul.
+- A proposta de comparar as duas paletas foi substituída pela aplicação direta de Carbono e Neon após o feedback do usuário. Uma avaliação de conforto em turnos longos ainda depende de validação com a equipe.
 - As capturas de evidência novas não incluem cada um dos seis módulos em desktop e celular. A suíte de 55 cenários passou, mas isso não substitui uma rodada completa de observação de tarefas com operadores e clientes.
 
 ## Arquivos principais alterados

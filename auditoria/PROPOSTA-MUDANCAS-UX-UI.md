@@ -8,12 +8,12 @@
 
 Deixar a aplicação mais clara, rápida e confortável para a equipe que a usa diariamente e mais coerente para a pessoa que recebe a apresentação. A proposta preserva as regras funcionais existentes enquanto melhora hierarquia, fluxos, componentes, responsividade e acessibilidade.
 
-## Decisões que precisam ser confirmadas
+## Decisões aplicadas nesta implementação
 
 1. **Público da experiência entregue:** mantido como painel demonstrativo/operacional existente. Portal de aluno e página comercial continuam sendo produtos separados.
 2. **Identidade visual:** Carbono e Neon aplicada conforme o arquivo de referência após o feedback do usuário; grafite e azul permanecem no histórico.
 3. **Formato de formulários longos:** preservadas as seções e o resumo de revisão existentes; aprimorada hierarquia e responsividade sem introduzir etapas desnecessárias às tarefas rápidas.
-4. **Prioridade de execução:** mudanças visuais descritas foram aplicadas. Ver evidências e limites no relatório de implementação.
+4. **Prioridade de execução:** mudanças visuais descritas foram aplicadas. Ver evidências e limites no relatório de implementação e os tokens finais em `auditoria/TEMA-CARBONO-NEON-2026-11-06.md`.
 
 ## Lista de mudanças propostas
 
